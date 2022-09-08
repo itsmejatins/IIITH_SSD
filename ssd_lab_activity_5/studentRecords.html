@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+    <h1>Student Records</h1>
+
+    <form name="dataForm" enctype="text/plain">
+        <br>
+        <input class ="inputField" type="number" name="rollno"> 
+        <input class ="inputField"  type="text" name="name">
+        <br><br>
+        <input class="btnclass" style="background-color: green;" type="button" name="add" value="Add New" onclick="addData();" class="btn btn-success"><hr>
+
+        <table class ="recTable" id="dtable" class="table" border="1">
+            <thead>
+                <th class = "thclass">rollno</th> 
+                <th class = "thclass">Name</th>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </form>
+
+    <script type="text/javascript">
+
+        function addData()
+        { 
+            var rollno=document.dataForm.rollno.value; 
+            var name=document.dataForm.name.value; 
+
+            var tr = document.createElement('tr');
+
+            var td1 = tr.appendChild(document.createElement('td'));
+            var td2 = tr.appendChild(document.createElement('td'));
+
+
+
+            td1.innerHTML=rollno;
+            td2.innerHTML=name;
+
+            document.getElementById("dtable").appendChild(tr);
+
+
+        }
+
+
+
+    </script>
+</div>
+</body>
+</html>
+
+
