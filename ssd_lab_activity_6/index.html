@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		ssd lab 6
+	</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>Team Form</h2>
+	<br>
+	<form id="formid">
+		<label><strong>Manager Name </strong></label> <input type="text" name="" required> <br><br>
+		<label><strong>Group email</strong></label> <input type="email" id="email" name="email" required> <br><br>
+		<label><strong>Server username</strong></label> <input type="text" name="" pattern="(?=.*\d)(?=.*[A-Z]).{1,}" required> <br><br>
+		<label><strong>Server password</strong></label> <input type="password" name="" required > <br><br>
+		<label><strong>Confirm password</strong></label> <input type="password" name="" required> <br><br>
+		<label><strong>Team Lead</strong></label> <select id="" name="">
+			<option value="jatin">Jatin</option>
+			<option value="aakash">Aakash</option>
+			<option value="jugnu">Jugnu</option>
+			<option value="nikhil">nikhil</option>
+		</select> <br><br>
+		<label><strong>Team Members</strong></label> 
+		<div class="box" >
+			<p class ="pl">Rohan</p>
+			<p class ="pl">Arjun</p>
+			<p class ="pl">Ravindra</p>
+			<p class ="pl">Kuldeep</p>
+		</div> <br>
+		<div class="box" ></div>
+		<input type="submit" >
+	</form>
+</body>
+<script src="functions.js"> </script>
+</html>

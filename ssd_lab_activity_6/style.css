@@ -1,0 +1,14 @@
+.box
+{
+  width: 350px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+.pl
+{
+	/*width: 350px;
+  height: 150px;
+  padding: 10px;*/
+  border: 1px solid #aaaaaa;
+}
