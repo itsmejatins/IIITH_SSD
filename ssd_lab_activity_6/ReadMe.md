@@ -1,1 +1,0 @@
-I am unable to do this lab activity. Don't have necessary knowledge.
